@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   scrape:
+    if: github.repository != 'hbmartin/overcast-to-pages-template'
     runs-on: ubuntu-latest
     env:
       OVERCAST_COOKIE: ${{ secrets.OVERCAST_COOKIE }}
